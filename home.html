@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CookBee">
+    <title>CookBee - Home Cooked Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images_used/cookbee_logo_without_name.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="download-app">
+            <img href ="https://play.google.com/store/apps?hl=en" src="images_used/download_image.png" alt="CookBee App Icon"> 
+            <span>Grab It Now!</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#" onclick="scrollToCenter(event, 'home')">Home</a></li>
+            <li><a href="#" onclick="scrollToCenter(event, 'about')">About us</a></li>
+    
+            <!-- Join Us Dropdown -->
+            <li class="dropdown">
+                <a href="#">Join us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="scrollToCenter(event, 'homechef')">Home Cook</a></li>
+                    <li><a href="#" onclick="scrollToCenter(event, 'deliverypartner')">Delivery Partner</a></li>
+                </ul>
+            </li>
+    
+            <li><a href="#" onclick="scrollToCenter(event, 'contact')">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- Hero section with inline background image -->
+    <header id="home" class="hero-section" style="background-image: url('images_used/AdobeStock_330709609.jpeg'); height: 100vh; background-position: center; background-size: cover; display: flex; justify-content: center; align-items: center; position: relative;">
+        <div class="overlay">
+            <img src="images_used/cookbee-logo.png" alt="CookBee Logo" class="logo">
+            <p class="tagline">Home cooked food, just a click away</p>
+        </div>
+    </header>
+
+    <!-- Who are we? Section -->
+    <section id="about" class="about-section">
+        <h2 class="about-heading">Craving comfort food? We've got you!</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Who are we?</h3>
+                <p>Remember the joy of family dinners and the comfort of home-cooked meals? CookBee brings those beloved moments back to you, with dishes crafted to warm your heart and remind you of home.</p>
+                <p>By choosing us, you're empowering talented home chefs to share their passion and bring the comforting taste of home to your table. Your favorite recipes, delivered fresh to your door.</p>
+            </div>
+            <img src="images_used/aboutuspic.png" alt="Illustration of a home chef" class="about-image image-shake toggle-image" class="toggle-image">
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team-section">
+        <div class="team-content">
+            <div class="team-image">
+                <img src="images_used/our_team.png" alt="CookBee Team Illustration" class="image-shake toggle-image">
+            </div>
+            <div class="team-text">
+                <h2>Our Team</h2>
+                <p>At CookBee, we're a passionate group of food enthusiasts and tech innovators. Our diverse team brings together expertise in culinary arts, logistics, and customer service to create a seamless home-cooked food delivery experience. We're committed to connecting talented home chefs with food lovers, fostering a community that celebrates the joy of homemade meals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to become a homechef Section -->
+    <section id="homechef" class="homechef-section">
+        <h2 class="homechef-title">How to become a homechef at CookBee?</h2>
+
+        <div class="homechef-grid">
+            <!-- Step 1 -->
+            <div class="homechef-step homechef-step-1">
+                <div class="homechef-image-container">
+                    <img src="images_used/step_1.png" alt="Sign up in CookBee" class="homechef-step-image">
+                    <div class="homechef-step-number-desc">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="homechef-step homechef-step-2">
+                <div class="homechef-image-container">
+                    <img src="images_used/step_2.png" alt="Prepare extra food" class="homechef-step-image-2">
+                    <div class="homechef-step-number-desc">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="homechef-step homechef-step-3">
+                <div class="homechef-image-container">
+                    <img src="images_used/step_3.png" alt="Sell it on CookBee" class="homechef-step-image">
+                    <div class="homechef-step-number-desc">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Now -->
+            <div class="homechef-download-container">
+                <h3 class="homechef-download-title">Download now on</h3>
+                <div class="homechef-store-buttons">
+                    <a href="https://play.google.com/store/apps?hl=en" aria-label="Download CookBee on Google Play">
+                        <img src="images_used/google_play_1.png" alt="Google Play" class="homechef-store-image toggle-image">
+                    </a>
+                    <a href="https://www.apple.com/in/app-store/" aria-label="Download CookBee on App Store">
+                        <img src="images_used/app_store_1.png" alt="App Store" class="homechef-store-image toggle-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join as a Delivery Partner Section -->
+    <section id = "deliverypartner" class="delivery-section">
+        <h2>Join us as a Delivery Partner.</h2>
+        <div class="delivery-content">
+            <img src="images_used/joinus.png" alt="Delivery Partner Illustration" class="delivery-image">
+            <div class="right-content">
+                <p>Make a great income by delivering delicious home-cooked meals to customers.</p>
+                <div class="download-container">
+                    <h3>Download now on</h3>
+                    <div class="store-buttons">
+                        <a href="https://play.google.com/store/apps?hl=en" aria-label="Download CookBee Delivery Partner app on Google Play">
+                            <img src="images_used/google_play.png" alt="Google Play" class="store-image toggle-image">
+                        </a>
+                        <a href="https://www.apple.com/in/app-store/" aria-label="Download CookBee Delivery Partner app on App Store">
+                            <img src="images_used/app_store.png" alt="App Store" class="store-image toggle-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-container">
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="left-section">
+                <h2>Craving comfort food? <br> We've got you!</h2>
+                <p>Get in touch with us for any questions, suggestions, or partnership inquiries. We're here to bring the taste of home to your doorstep.</p>
+                
+                <div class="follow-us">
+                    <h3>Follow us on</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" aria-label="Follow CookBee on Facebook"><img src="images_used/facebook_logo.png" alt="Facebook" class="social-icon"></a>
+                        <a href="https://www.instagram.com/" aria-label="Follow CookBee on Instagram"><img src="images_used/instagram_logo.png" alt="Instagram" class="social-icon"></a>
+                        <a href="https://x.com/i/flow/login" aria-label="Follow CookBee on Twitter"><img src="images_used/X_logo.png" alt="Twitter" class="social-icon"></a>
+                        <a href="https://in.linkedin.com/" aria-label="Follow CookBee on LinkedIn"><img src="images_used/likedin_logo.png" alt="LinkedIn" class="social-icon"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <div class="contact-content">
+                    <h2>Contact us</h2>
+                    <form class="contact-form" id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your email address" required>
+                        <textarea placeholder="Your message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; COOKBEE</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    
+        
+        
+    
+    
+</body>
+</html>
+
+
+
+
+
